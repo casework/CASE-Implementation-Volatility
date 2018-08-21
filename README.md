@@ -1,4 +1,7 @@
 ### Proof-of-Concept CASE Volatility Plugins
+
+*Note: This POC is not ontology-correct!*
+
 This repository contains a sub-set of [Volatility](https://github.com/volatilityfoundation/volatility/)
 plugins that produce output in the [CASE/UCO](https://github.com/ucoproject/) format.
 
