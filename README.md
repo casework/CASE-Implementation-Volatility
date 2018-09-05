@@ -33,17 +33,17 @@ All [Volatility](https://github.com/volatilityfoundation/volatility/) work belon
 ### Running Custom PoC Plugins
 
 
-**CASE/UCO Handle List from Memory Image:**
+CASE/UCO Handle List from Memory Image:
 ```
 vol.py --plugins='volplugs/src/' -f memory_images/memory.img --profile WinXPSP2x86 casehandles
 ```
 
-**CASE/UCO Procdump:**
+CASE/UCO Procdump:
 ```
 vol.py --plugins='volplugs/src/' -f memory_images/memory.img caseprocdump --dump-dir dumpdir
 ```
 
-**CASE/UCO Commandline dumping:**
+CASE/UCO Commandline dumping:
 ```
 vol.py --plugins='volplugs/src/' -f memory_images/memory.img casecmdline
 ```
