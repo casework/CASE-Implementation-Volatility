@@ -38,12 +38,12 @@ CASE Handle List from Memory Image:
 vol.py --plugins='volplugs/src/' -f memory_images/memory.img --profile WinXPSP2x86 casehandles
 ```
 
-CASE/UCO Procdump:
+CASE Procdump:
 ```
 vol.py --plugins='volplugs/src/' -f memory_images/memory.img caseprocdump --dump-dir dumpdir
 ```
 
-CASE/UCO Commandline dumping:
+CASE Commandline dumping:
 ```
 vol.py --plugins='volplugs/src/' -f memory_images/memory.img casecmdline
 ```
