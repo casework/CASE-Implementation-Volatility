@@ -1,6 +1,6 @@
 # Cyber-investigation Analysis Standard Expression (CASE)
 
-_Read the [CASE Wiki tab](https://github.com/ucoProject/CASE/wiki) to learn **everything** you need to know about the Cyber-investigation Analysis Standard Expression (CASE) ontology._
+_Read the [CASE Wiki tab](https://github.com/casework/CASE/wiki) to learn **everything** you need to know about the Cyber-investigation Analysis Standard Expression (CASE) ontology._
 _For learning about the Unified Cyber Ontology, CASE's parent, see [UCO](https://github.com/ucoProject/UCO)._
 
 # Proof-of-Concept CASE Volatility Plugins
@@ -8,14 +8,14 @@ _For learning about the Unified Cyber Ontology, CASE's parent, see [UCO](https:/
 *Note: This POC is not ontology-correct!*
 
 This repository contains a sub-set of [Volatility](https://github.com/volatilityfoundation/volatility/)
-plugins that produce output in the [CASE/UCO](https://github.com/ucoproject/) format.
+plugins that produce output in the [CASE](https://github.com/casework/CASE) format.
 
 These plugins have been taken from core Volatility plugins and adapted
-the output to produce CASE/UCO JSON-LD. These currently are **proof-of-concept
-only**, and may not fully comply to the CASE/UCOontology as it is an evolving standard.
+the output to produce CASE JSON-LD. These currently are **proof-of-concept
+only**, and may not fully comply to the CASE ontology as it is an evolving standard.
 
 This repository takes the following plugins from the [Volatility framework](https://github.com/volatilityfoundation/volatility/)
-and adapats the output to be CASE/UCO compliant based on the v0.1.0 release:
+and adapats the output to be CASE compliant based on the v0.1.0 release:
 
 * [handles.py](https://github.com/volatilityfoundation/volatility/blob/master/volatility/plugins/handles.py)
 * [procdump.py](https://github.com/volatilityfoundation/volatility/blob/master/volatility/plugins/procdump.py)
@@ -26,14 +26,14 @@ All [Volatility](https://github.com/volatilityfoundation/volatility/) work belon
 
 
 ### Installation  of 3rd Party Libraries
-* [CASE Python Library](https://github.com/ucoProject/CASE-Python-API).
+* [CASE Python Library](https://github.com/casework/CASE-Python-API).
 * [Volatility Python library](https://github.com/volatilityfoundation/volatility/wiki/Installation).
 
 
 ### Running Custom PoC Plugins
 
 
-CASE/UCO Handle List from Memory Image:
+CASE Handle List from Memory Image:
 ```
 vol.py --plugins='volplugs/src/' -f memory_images/memory.img --profile WinXPSP2x86 casehandles
 ```
