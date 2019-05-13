@@ -51,18 +51,18 @@ class CaseCmdline(taskmods.DllList):
 
         # CASE Specific structure to create CASE Document.
         self.document = case.Document()
-        self.instrument = self.document.create_uco_object(
+        self.instrument = self.document.create_CoreObject(
             'Tool',
             name='Volatility',
             version='2.6',
             toolType="Forensics",
             uri=" ".join(sys.argv)
         )
-        self.performer = self.document.create_uco_object('Identity',
+        self.performer = self.document.create_CoreObject('Identity',
             uri=getpass.getuser())
         self.performer.create_property_bundle('Username: ',
             Name=getpass.getuser())
-        self.action = self.document.create_uco_object('InvestigativeAction',
+        self.action = self.document.create_CoreObject('InvestigativeAction',
             startTime=datetime.datetime.now().isoformat(),
             endTime=datetime.datetime.now().isoformat())
 
