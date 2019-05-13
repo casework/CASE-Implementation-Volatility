@@ -65,7 +65,7 @@ class CaseProcDump(taskmods.DllList):
 
         # CASE Specific structure to create CASE Document.
         self.document = case.Document()
-        self.instrument = self.document.create_uco_object(
+        self.instrument = self.document.create_CoreObject(
             "Tool",
             name="Volatility",
             version="2.6",
@@ -74,10 +74,10 @@ class CaseProcDump(taskmods.DllList):
         )
 
         # Creating performer UCO object.
-        self.performer = self.document.create_uco_object('Identity', uri=getpass.getuser())
+        self.performer = self.document.create_CoreObject('Identity', uri=getpass.getuser())
         self.performer.create_property_bundle('Username: ',
             Name=getpass.getuser())
-        self.action = self.document.create_uco_object('ForensicAction',
+        self.action = self.document.create_CoreObject('ForensicAction',
             startTime=datetime.datetime.now().isoformat(),
             endTime=datetime.datetime.now().isoformat())
 
