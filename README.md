@@ -5,7 +5,7 @@ _For learning about the Unified Cyber Ontology, CASE's parent, see [UCO](https:/
 
 # Proof-of-Concept CASE Volatility Plugins
 
-_**Note: This POC is not ontology-correct!**_
+_**Note: This POC is not ontology-correct! However, it attempts to adhere to v0.1.0 of CASE.**_
 
 This repository contains a sub-set of [Volatility](https://github.com/volatilityfoundation/volatility/)
 plugins that produce output in the [CASE](https://github.com/casework/CASE) format.
@@ -15,7 +15,7 @@ the output to produce CASE JSON-LD. These currently are **proof-of-concept
 only**, and may not fully comply to the CASE ontology as it is an evolving standard.
 
 This repository takes the following plugins from the [Volatility framework](https://github.com/volatilityfoundation/volatility/)
-and adapats the output to be CASE compliant based on the v0.1.0 release:
+and converts the output to CASE format:
 
 * [handles.py](https://github.com/volatilityfoundation/volatility/blob/master/volatility/plugins/handles.py)
 * [procdump.py](https://github.com/volatilityfoundation/volatility/blob/master/volatility/plugins/procdump.py)
