@@ -5,8 +5,13 @@ _For learning about the Unified Cyber Ontology, CASE's parent, see [UCO](https:/
 
 # Proof-of-Concept CASE Volatility Plugins
 
-_**Note: This POC is not ontology-correct! However, it attempts to adhere to v0.1.0 of CASE.**_
+### Development Status: Alpha
 
+Alpha status implies:
+- Designation of versions of CASE and UCO the project supports.
+- Follow Semantic Versioning (SEMVER).
+
+This POC is not ontology-correct! However, it attempts to adhere to v0.1.0 of CASE.
 This repository contains a sub-set of [Volatility](https://github.com/volatilityfoundation/volatility/)
 plugins that produce output in the [CASE](https://github.com/casework/CASE) format.
 
