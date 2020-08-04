@@ -3,7 +3,7 @@
 _Read the [CASE Wiki tab](https://github.com/casework/CASE/wiki) to learn **everything** you need to know about the Cyber-investigation Analysis Standard Expression (CASE) ontology._
 _For learning about the Unified Cyber Ontology, CASE's parent, see [UCO](https://github.com/ucoProject/UCO)._
 
-# Proof-of-Concept CASE Volatility Plugins
+# Implementation of CASE into Volatility Plugins
 
 ### Development Status: Alpha
 
@@ -11,13 +11,12 @@ Alpha status implies:
 - Designation of versions of CASE and UCO the project supports.
 - Follow Semantic Versioning (SEMVER).
 
-This POC is not ontology-correct! However, it attempts to adhere to v0.1.0 of CASE.
+This implementation is not ontology-correct! However, it attempts to adhere to v0.1.0 of CASE.
 This repository contains a sub-set of [Volatility](https://github.com/volatilityfoundation/volatility/)
 plugins that produce output in the [CASE](https://github.com/casework/CASE) format.
 
 These plugins have been taken from core Volatility plugins and adapted
-the output to produce CASE JSON-LD. These currently are **proof-of-concept
-only**, and may not fully comply to the CASE ontology as it is an evolving standard.
+the output to produce CASE JSON-LD. The Alpha status of this code means it may not fully comply to the CASE ontology as it is an evolving standard.
 
 This repository takes the following plugins from the [Volatility framework](https://github.com/volatilityfoundation/volatility/)
 and converts the output to CASE format:
@@ -35,7 +34,7 @@ All [Volatility](https://github.com/volatilityfoundation/volatility/) work belon
 * [Volatility Python library](https://github.com/volatilityfoundation/volatility/wiki/Installation).
 
 
-### Running Custom PoC Plugins
+### Running Custom Plugins
 
 
 CASE Handle List from Memory Image:
